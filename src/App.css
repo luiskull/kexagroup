@@ -1,26 +1,174 @@
 .coming-soon {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #0f172a;
+  background-image: url('/assets/img/kexa-fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.coming-soon__content {
+  width: 100%;
+  max-width: 64rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coming-soon__logo {
+  margin-bottom: 2rem;
+}
+
+.coming-soon__logo-img {
+  display: block;
+  width: 14rem;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.coming-soon__brands {
+  margin-bottom: 5rem;
+}
+
+.coming-soon__brands-label {
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7em;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.coming-soon__brands-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.coming-soon__brand-logo {
+  height: 1.25rem;
+  width: auto;
+}
+
+.coming-soon__brands-divider {
+  width: 1px;
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 2.5rem;
+}
+
+.coming-soon__headline h1 {
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #101b37;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.6em;
+  font-size: 1.875rem;
 }
 
-.coming-soon__picture {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
+.coming-soon__headline {
+  margin-bottom: 1.25rem;
 }
 
-.coming-soon__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+.coming-soon__address {
+  margin-bottom: 0.75rem;
+}
+
+.coming-soon__address address {
+  font-style: normal;
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  line-height: 1.625;
+  max-width: 48rem;
+  padding: 0 1rem;
+}
+
+.coming-soon__footer a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.875rem;
+  letter-spacing: 0.3em;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.coming-soon__footer a:hover {
+  color: #22d3ee;
+}
+
+@media (min-width: 640px) {
+  .coming-soon__logo-img {
+    width: 18rem;
+  }
+
+  .coming-soon__headline h1 {
+    font-size: 2.25rem;
+  }
+
+  .coming-soon__address address {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .coming-soon__content {
+    padding: 5rem 1.5rem;
+  }
+
+  .coming-soon__logo-img {
+    width: 24rem;
+  }
+
+  .coming-soon__brands-label {
+    font-size: 0.875rem;
+  }
+
+  .coming-soon__brands-row {
+    gap: 2.5rem;
+  }
+
+  .coming-soon__brand-logo {
+    height: 2rem;
+  }
+
+  .coming-soon__headline h1 {
+    font-size: 3rem;
+  }
+
+  .coming-soon__address address {
+    font-size: 0.875rem;
+  }
+
+  .coming-soon__footer a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .coming-soon__logo-img {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .coming-soon__brands {
+    margin-bottom: 3rem;
+  }
+
+  .coming-soon__brands-divider {
+    margin: 0 1rem;
+  }
+
+  .coming-soon__headline h1 {
+    letter-spacing: 0.35em;
+  }
 }

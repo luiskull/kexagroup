@@ -2,38 +2,49 @@ import './App.css'
 
 function App() {
   return (
-    <main className="coming-soon">
-      <picture className="coming-soon__picture">
-        <source
-          media="(max-width: 768px)"
-          srcSet="
-            /coming-soon-mobile.png 402w,
-            /coming-soon-mobile@2x.png 804w,
-            /coming-soon-mobile@3x.png 1206w,
-            /coming-soon-mobile@4x.png 1608w
-          "
-          sizes="100vw"
-        />
-        <source
-          media="(min-width: 1920px)"
-          srcSet="/coming-soon@4x.png"
-        />
-        <img
-          src="/coming-soon.png"
-          srcSet="
-            /coming-soon.png 1024w,
-            /coming-soon@2x.png 2048w,
-            /coming-soon@3x.png 3072w,
-            /coming-soon@4x.png 4096w
-          "
-          sizes="100vw"
-          alt="Kexa Group - Coming Soon"
-          className="coming-soon__image"
-          decoding="async"
-          fetchPriority="high"
-        />
-      </picture>
-    </main>
+    <div className="coming-soon">
+      <main className="coming-soon__content">
+        <section className="coming-soon__logo">
+          <img
+            src="/assets/img/kexa-logog.png"
+            alt="Kexa Group"
+            className="coming-soon__logo-img"
+          />
+        </section>
+
+        <section className="coming-soon__brands">
+          <p className="coming-soon__brands-label">Empresas del Grupo</p>
+          <div className="coming-soon__brands-row">
+            <img
+              src="/assets/img/kull-logo.png"
+              alt="Kull"
+              className="coming-soon__brand-logo"
+            />
+            <div className="coming-soon__brands-divider" aria-hidden="true" />
+            <img
+              src="/assets/img/enlace360-logo.png"
+              alt="Enlace360"
+              className="coming-soon__brand-logo"
+            />
+          </div>
+        </section>
+
+        <section className="coming-soon__headline">
+          <h1>Coming Soon</h1>
+        </section>
+
+        <section className="coming-soon__address">
+          <address>
+            Workplaza | Av. La Dehesa 222, Of. 408 | Lo Barnechea, Región
+            Metropolitana
+          </address>
+        </section>
+
+        <footer className="coming-soon__footer">
+          <a href="https://kexagroup.cl">kexagroup.cl</a>
+        </footer>
+      </main>
+    </div>
   )
 }
 
