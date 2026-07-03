@@ -40,8 +40,9 @@ function App() {
 
         <section className="coming-soon__address">
           <address>
-            Workplaza | Av. La Dehesa 222, Of. 408 | Lo Barnechea, Región
-            Metropolitana
+            Workplaza | Av. La Dehesa 222, Of. 408
+            <br />
+            Lo Barnechea, Región Metropolitana
           </address>
         </section>
 
