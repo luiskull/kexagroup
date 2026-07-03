@@ -15,17 +15,22 @@ function App() {
         <section className="coming-soon__brands">
           <p className="coming-soon__brands-label">Empresas del Grupo</p>
           <div className="coming-soon__brands-row">
+            <a href="https://kull.cl" target="_blank" rel="noopener noreferrer">
             <img
               src="/assets/img/kull-logo.png"
               alt="Kull"
               className="coming-soon__brand-logo"
             />
+            </a>
+
             <div className="coming-soon__brands-divider" aria-hidden="true" />
+            <a href="https://enlace360.cl" target="_blank" rel="noopener noreferrer">
             <img
               src="/assets/img/enlace360-logo.png"
               alt="Enlace360"
               className="coming-soon__brand-logo"
             />
+            </a>
           </div>
         </section>
 
